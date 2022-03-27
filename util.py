@@ -15,7 +15,7 @@
 
 """Utilities for math and geometry operations."""
 import math
-
+import pickle
 from pano_utils import geometry
 from pano_utils import math_utils
 from pano_utils import transformation
@@ -23,6 +23,13 @@ import tensorflow.compat.v1 as tf
 from tensorflow_graphics.geometry.transformation import axis_angle
 from tensorflow_graphics.geometry.transformation import rotation_matrix_3d
 import tensorflow_probability as tfp
+
+
+def read_pickle(file):
+  """Read fomr pickle files."""
+  with open(file, 'rb') as f:
+    loaded = pickle.load(f, encoding='bytes') 
+  return list(loaded.keys()), list(loaded.values())
 
 
 def safe_sqrt(x):
