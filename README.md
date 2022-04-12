@@ -11,5 +11,5 @@ Kefan Chen, Noah Snavely, Ameesh Makadia \
 Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tensorflow_probability, tf_slim, pickle
 
 Sample data: https://drive.google.com/file/d/1MuI4Au0tENwqHB9FJgmxk9iU_Vz94GsA/view?usp=sharing
-Checkpoints trained on MatterportA: https://drive.google.com/file/d/1MuI4Au0tENwqHB9FJgmxk9iU_Vz94GsA/view?usp=sharing
+Checkpoints trained on MatterportA: https://drive.google.com/file/d/1ATA1-FwWb_sKAV4uWcpj7ZrMu59ZhG3_/view?usp=sharing
 
