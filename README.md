@@ -31,7 +31,7 @@ python train.py \
 --data_dir <path_to_training_set> \
 --model 9D
 ```
-2. Save the estimated rotations as pickle dictionary in the data directories respectively.
+2. Run DirectionNet-R on the training and test sets, then save the estimated rotations as Python pickle dictionary in the data directories respectively.
 3. train DirectionNet-T.
 ```
 python train.py \
@@ -41,7 +41,7 @@ python train.py \
 ```
 
 ## Evaluation
-#DirectionNet-R
+DirectionNet-R
 ```
 python eval.py \
 --checkpoint_dir <path_to_load_checkpoints> \
@@ -52,7 +52,7 @@ python eval.py \
 --model 9D
 ```
 
-#DirectionNet-T
+DirectionNet-T
 ```
 python eval.py \
 --checkpoint_dir <path_to_load_checkpoints> \
