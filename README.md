@@ -27,29 +27,40 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 1. train DirectionNet-R.
 ```
 python train.py \
-	--checkpoint_dir <path_to_checkpoints_and_logs> \
-	--data_dir <path_to_training_set> \
-	--model 9D
+--checkpoint_dir <path_to_checkpoints_and_logs> \
+--data_dir <path_to_training_set> \
+--model 9D
 ```
 2. Save the estimated rotations as pickle dictionary in the data directories respectively.
 3. train DirectionNet-T.
 ```
 python train.py \
-	--checkpoint_dir <path_to_checkpoints_and_logs> \
-	--data_dir <path_to_training_set> \
-	--model T
+--checkpoint_dir <path_to_checkpoints_and_logs> \
+--data_dir <path_to_training_set> \
+--model T
 ```
 
 ## Evaluation
-
+#DirectionNet-R
 ```
 python eval.py \
-	--checkpoint_dir <path_to_load_checkpoints> \
-	--eval_data_dir <path_to_test_set> \
-	--save_summary_dir <path_to_save_logs> \
-	--model <9D (DirectionNet-R) or T (DirectionNet-T)>
-	--testset_size <testset_size> \
-	--batch <test_batch>
+--checkpoint_dir <path_to_load_checkpoints> \
+--eval_data_dir <path_to_test_set> \
+--save_summary_dir <path_to_save_logs> \
+--testset_size <testset_size> \
+--batch <test_batch> \
+--model 9D
+```
+
+#DirectionNet-T
+```
+python eval.py \
+--checkpoint_dir <path_to_load_checkpoints> \
+--eval_data_dir <path_to_test_set> \
+--save_summary_dir <path_to_save_logs> \
+--testset_size <testset_size> \
+--batch <test_batch> \
+--model T
 ```
 
 ## Citation
