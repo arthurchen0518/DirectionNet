@@ -18,3 +18,13 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 dataset.generate_from_meta can create the datasets of images and ground truth from the Matterport3D dataset given the meta data files.
 
 dataset.generate_random_views can be used to generate a large-scale wide stereo dataset with camera pose labels from a panoramic image dataset.
+
+
+	@InProceedings{Chen_2021_CVPR,
+    author    = {Chen, Kefan and Snavely, Noah and Makadia, Ameesh},
+    title     = {Wide-Baseline Relative Camera Pose Estimation With Directional Learning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {3258-3268}
+	}
