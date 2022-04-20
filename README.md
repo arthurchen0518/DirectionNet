@@ -22,6 +22,23 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 
 2. dataset.generate_random_views can be used to generate a large-scale wide stereo dataset with camera pose labels from a panoramic image dataset.
 
+## Train DirectionNet-R and DirectionNet-T
+
+1. train DirectionNet-R.
+
+	python train.py \
+		--checkpoint_dir <path_to_checkpoints_and_logs> \
+		--data_dir <path_to_training_set> \
+		--model 9D
+
+2. Save the estimated rotations as pickle dictionary in the data directories respectively.
+3. train DirectionNet-T.
+
+	python train.py \
+		--checkpoint_dir <path_to_checkpoints_and_logs> \
+		--data_dir <path_to_training_set> \
+		--model T
+
 ## Citation
 
 	@InProceedings{Chen_2021_CVPR,
