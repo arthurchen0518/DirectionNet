@@ -25,22 +25,22 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 ## Train DirectionNet-R and DirectionNet-T
 
 1. train DirectionNet-R.
-
+"""
 	python train.py \
 		--checkpoint_dir <path_to_checkpoints_and_logs> \
 		--data_dir <path_to_training_set> \
 		--model 9D
-
+"""
 2. Save the estimated rotations as pickle dictionary in the data directories respectively.
 3. train DirectionNet-T.
-
+"""
 	python train.py \
 		--checkpoint_dir <path_to_checkpoints_and_logs> \
 		--data_dir <path_to_training_set> \
 		--model T
-
+"""
 ## Citation
-
+"""
 	@InProceedings{Chen_2021_CVPR,
     author    = {Chen, Kefan and Snavely, Noah and Makadia, Ameesh},
     title     = {Wide-Baseline Relative Camera Pose Estimation With Directional Learning},
@@ -49,3 +49,4 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
     year      = {2021},
     pages     = {3258-3268}
 	}
+"""
