@@ -26,27 +26,40 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 
 1. train DirectionNet-R.
 ```
-	python train.py \
-		--checkpoint_dir <path_to_checkpoints_and_logs> \
-		--data_dir <path_to_training_set> \
-		--model 9D
+python train.py \
+	--checkpoint_dir <path_to_checkpoints_and_logs> \
+	--data_dir <path_to_training_set> \
+	--model 9D
 ```
 2. Save the estimated rotations as pickle dictionary in the data directories respectively.
 3. train DirectionNet-T.
 ```
-	python train.py \
-		--checkpoint_dir <path_to_checkpoints_and_logs> \
-		--data_dir <path_to_training_set> \
-		--model T
+python train.py \
+	--checkpoint_dir <path_to_checkpoints_and_logs> \
+	--data_dir <path_to_training_set> \
+	--model T
 ```
+
+## Evaluation
+
+```
+python eval.py \
+	--checkpoint_dir <path_to_load_checkpoints> \
+	--eval_data_dir <path_to_test_set> \
+	--save_summary_dir <path_to_save_logs> \
+	--model <9D (DirectionNet-R) or T (DirectionNet-T)>
+	--testset_size <testset_size> \
+	--batch <test_batch>
+```
+
 ## Citation
 ```
-	@InProceedings{Chen_2021_CVPR,
-    author    = {Chen, Kefan and Snavely, Noah and Makadia, Ameesh},
-    title     = {Wide-Baseline Relative Camera Pose Estimation With Directional Learning},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {3258-3268}
-	}
+@InProceedings{Chen_2021_CVPR,
+author    = {Chen, Kefan and Snavely, Noah and Makadia, Ameesh},
+title     = {Wide-Baseline Relative Camera Pose Estimation With Directional Learning},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month     = {June},
+year      = {2021},
+pages     = {3258-3268}
+}
 ```
