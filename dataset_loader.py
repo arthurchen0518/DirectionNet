@@ -93,7 +93,7 @@ def data_loader(
 	return input_pair(img_id, src_image, trt_image, rotation, translation, fov, rotation_pred)
 
   ds = tf.data.Dataset.list_files(os.path.join(data_path, '*'))
-  ds = ds.flat_map(load_sstable)
+  ds = ds.flat_map(load_data)
   ds = ds.map(load_images, num_parallel_calls=50).apply(
   	tf.data.experimental.ignore_errors()).repeat(epochs)
   ds = ds.batch(batch_size, drop_remainder=True).prefetch(10)
