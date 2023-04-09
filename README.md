@@ -14,7 +14,7 @@ Required packages: tensorflow 1.15, tensorflow_graphics, tensorflow_addons, tens
 ## Dataset and Pre-trained Models
 
 [MatterportA test data](https://drive.google.com/file/d/1be75Ys8vi1o7eeS_Rf0SuJxlTkDJNisZ/view?usp=sharing)\
-[MatterportB test data](https://drive.google.com/file/d/1PcyD_8TZOOKh6G8B8eUHQrOUEOMrMx_F/view?usp=sharing)\
+[MatterportB test data](https://drive.google.com/file/d/1PcyD_8TZOOKh6G8B8eUHQrOUEOMrMx_F/view?usp=sharing)
 <!-- [MatterportA Checkpoints](https://drive.google.com/file/d/1ATA1-FwWb_sKAV4uWcpj7ZrMu59ZhG3_/view?usp=sharing)\
 [MatterportB Checkpoints](https://drive.google.com/file/d/14OUSXnay8VD5rARxXwwLX11z-ScibXN8/view?usp=sharing) -->
 
