@@ -27,7 +27,7 @@ def data_loader(
   """
 
   def load_data(path):
-     "Load files saved as pickle."
+    "Load files saved as pickle."
     img_id, rotation = tf.py_func(util.read_pickle, 
       [path + '/rotation_gt.pickle'], [tf.string, tf.float32])
     _, translation = tf.py_func(util.read_pickle, 
