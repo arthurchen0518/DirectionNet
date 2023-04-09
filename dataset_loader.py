@@ -68,11 +68,11 @@ def data_loader(
 		  'rotation_pred'
 		 ])
   	src_image = load_single_image(img_path+'.src.perspective.png')
-    trt_image = load_single_image(img_path+'.trt.perspective.png')
+        trt_image = load_single_image(img_path+'.trt.perspective.png')
 	random_gamma = random.uniform(0.7, 1.2)
 	if training:
 	  src_image = tf.image.adjust_gamma(src_image, random_gamma)
-      trt_image = tf.image.adjust_gamma(trt_image, random_gamma)
+          trt_image = tf.image.adjust_gamma(trt_image, random_gamma)
 
   	rotation = tf.reshape(
   		tf.stack([tf.decode_csv(rotation, [0.0] * 9)], 0), [3, 3])
